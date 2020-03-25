@@ -38,7 +38,7 @@ export default NativeModules.ExponentUpdates
         const result = await NativeModules.ExponentUpdates.fetchUpdateAsync();
         setTimeout(() => {
           _isFetchingUpdate = false;
-        }, 1000);
+        }, 0);
 
         if (!result) {
           return { isNew: false };
